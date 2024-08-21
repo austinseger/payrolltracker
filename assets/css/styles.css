@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9fbfd;
+  line-height: 1.6;
+  color: hsl(206, 17%, 28%);
+}
+
+.wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0;
+  color: hsl(206, 17%, 28%);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+}
+
+.card-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+  margin-top: 20px;
+}
+
+.card-body {
+  min-height: 100px;
+  padding-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead th {
+  background-color: hsl(223, 64%, 90%);
+  padding: 10px;
+  border-bottom: 2px solid hsl(206, 17%, 28%);
+}
+
+td {
+  text-align: center;
+  padding: 12px;
+  border: 1px solid hsl(206, 17%, 28%);
+}
+
+tbody tr:nth-child(even) {
+  background-color: hsl(223, 64%, 90%);
+}
+
+tbody tr:hover {
+  background-color: hsl(223, 74%, 65%);
+}
+
+.card-footer {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  border: none;
+  background-color: hsl(223, 74%, 48%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px, rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background-color: hsl(223, 74%, 60%);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px 0px;
+}
+
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
+}
+
+.float-right {
+  float: right;
+}
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 25px;
+  }
+  .card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+    padding: 8px 20px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}

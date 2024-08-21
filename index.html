@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Employee Payroll Tracker</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="main-header">
+      <h1>Employee Payroll Tracker</h1>
+    </header>
+    <main class="content">
+      <section class="employee-section">
+        <div class="employee-card">
+          <header class="employee-card-header">
+            <h2>Employee Roster</h2>
+          </header>
+          <div class="employee-card-body">
+            <table class="employee-table">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Salary</th>
+                </tr>
+              </thead>
+              <tbody id="employee-table">
+                <!-- Employee data will be dynamically injected here -->
+              </tbody>
+            </table>
+          </div>
+          <footer class="employee-card-footer">
+            <button id="add-employees-btn" class="btn primary-btn">Add Employees</button>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
